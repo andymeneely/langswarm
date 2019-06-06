@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  corenlp:
+    image: frnkenstien/corenlp
+    build: .
+    ports:
+      - "9000:9000"
+    deploy:
+      replicas: 3
+      resources:
+          limits:
+            memory: 1800M          
