@@ -6,8 +6,10 @@ services:
     build: .
     ports:
       - "9000:9000"
+    environment:
+      - JAVA_XMX=1.5g
     deploy:
-      replicas: 3
+      replicas: 6
       resources:
           limits:
-            memory: 1800M          
+            memory: 1800M
