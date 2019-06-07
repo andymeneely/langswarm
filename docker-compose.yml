@@ -6,7 +6,7 @@ services:
     ports:
       - "9000:9000"
     environment:
-      - JAVA_XMX=1.5g
+      - JAVA_XMX=1500M
     deploy:
       replicas: 6
       resources:
