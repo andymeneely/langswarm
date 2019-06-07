@@ -2,7 +2,7 @@ version: '3'
 
 services:
   corenlp:
-    image: frnkenstien/corenlp
+    image: nlpbox/corenlp
     ports:
       - "9000:9000"
     environment:
